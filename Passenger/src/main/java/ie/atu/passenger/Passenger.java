@@ -35,11 +35,20 @@ public class Passenger {
             System.out.println("Your ID is "+Id);
         }
         else{
-            throw new IllegalArgumentException("This Id is too short");
+            throw new IllegalArgumentException("This Is not a valid ID");
         }
         return Id;
     }
 
+    public String getPhone(String phone){
+        if(phone.length()>=7){
+            System.out.println("Your phone number is "+phone);
+        }
+        else{
+            throw new IllegalArgumentException("This is not a valid phone number");
+        }
+        return phone;
+    }
 
 
 }
