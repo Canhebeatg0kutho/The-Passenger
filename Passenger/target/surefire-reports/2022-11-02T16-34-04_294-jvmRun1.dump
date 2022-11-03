@@ -1,0 +1,163 @@
+# Created at 2022-11-02T16:35:06.003
+Thread dump for process (27584@DESKTOP-N6K3DTQ):
+"main" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@15.0.9/java.io.WinNTFileSystem.getBooleanAttributes(Native Method)
+        at java.base@15.0.9/java.io.FileSystem.hasBooleanAttributes(FileSystem.java:125)
+        at java.base@15.0.9/java.io.File.exists(File.java:832)
+        at java.base@15.0.9/jdk.internal.loader.URLClassPath$FileLoader.getResource(URLClassPath.java:1253)
+        at java.base@15.0.9/jdk.internal.loader.URLClassPath.getResource(URLClassPath.java:318)
+        at java.base@15.0.9/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:720)
+        at java.base@15.0.9/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:646)
+        at java.base@15.0.9/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:604)
+        at java.base@15.0.9/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:168)
+        at java.base@15.0.9/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+        at app//org.junit.platform.launcher.core.DefaultLauncherSession.close(DefaultLauncherSession.java:47)
+        at app//org.apache.maven.surefire.junitplatform.LazyLauncher.close(LazyLauncher.java:81)
+        at app//org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.closeLauncher(JUnitPlatformProvider.java:245)
+        at app//org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:179)
+        at app//org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:139)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+
+"Reference Handler" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@15.0.9/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+        at java.base@15.0.9/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+        at java.base@15.0.9/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+"Finalizer" 
+   java.lang.Thread.State: WAITING
+        at java.base@15.0.9/java.lang.Object.wait(Native Method)
+        at java.base@15.0.9/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+        at java.base@15.0.9/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+        at java.base@15.0.9/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+"Signal Dispatcher" 
+   java.lang.Thread.State: RUNNABLE
+
+"Attach Listener" 
+   java.lang.Thread.State: RUNNABLE
+
+"Notification Thread" 
+   java.lang.Thread.State: RUNNABLE
+
+"Common-Cleaner" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@15.0.9/java.lang.Object.wait(Native Method)
+        at java.base@15.0.9/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+        at java.base@15.0.9/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+        at java.base@15.0.9/java.lang.Thread.run(Thread.java:832)
+        at java.base@15.0.9/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+"surefire-forkedjvm-stream-flusher" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@15.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@15.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+        at java.base@15.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+        at java.base@15.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+        at java.base@15.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+        at java.base@15.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+        at java.base@15.0.9/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+        at java.base@15.0.9/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+        at java.base@15.0.9/java.lang.Thread.run(Thread.java:832)
+
+"surefire-forkedjvm-command-thread" 
+   java.lang.Thread.State: RUNNABLE
+        at java.management@15.0.9/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+        at java.management@15.0.9/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:197)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.generateThreadDump(ForkedBooter.java:683)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.access$600(ForkedBooter.java:80)
+        at app//org.apache.maven.surefire.booter.ForkedBooter$4.update(ForkedBooter.java:378)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.callListeners(CommandReader.java:426)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:366)
+        at java.base@15.0.9/java.lang.Thread.run(Thread.java:832)
+
+
+
+# Created at 2022-11-02T16:35:06.006
+Exiting self fork JVM. Received SHUTDOWN command from Maven shutdown hook.
+Thread dump before exiting the process (27584@DESKTOP-N6K3DTQ):
+"main" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@15.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@15.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+        at java.base@15.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(AbstractQueuedSynchronizer.java:716)
+        at java.base@15.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1073)
+        at java.base@15.0.9/java.util.concurrent.Semaphore.tryAcquire(Semaphore.java:415)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.acquireOnePermit(ForkedBooter.java:618)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.acknowledgedExit(ForkedBooter.java:442)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:190)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+
+"Reference Handler" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@15.0.9/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+        at java.base@15.0.9/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+        at java.base@15.0.9/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+"Finalizer" 
+   java.lang.Thread.State: WAITING
+        at java.base@15.0.9/java.lang.Object.wait(Native Method)
+        at java.base@15.0.9/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+        at java.base@15.0.9/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+        at java.base@15.0.9/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+"Signal Dispatcher" 
+   java.lang.Thread.State: RUNNABLE
+
+"Attach Listener" 
+   java.lang.Thread.State: RUNNABLE
+
+"Notification Thread" 
+   java.lang.Thread.State: RUNNABLE
+
+"Common-Cleaner" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@15.0.9/java.lang.Object.wait(Native Method)
+        at java.base@15.0.9/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+        at java.base@15.0.9/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+        at java.base@15.0.9/java.lang.Thread.run(Thread.java:832)
+        at java.base@15.0.9/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+"surefire-forkedjvm-stream-flusher" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@15.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@15.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+        at java.base@15.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+        at java.base@15.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+        at java.base@15.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+        at java.base@15.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+        at java.base@15.0.9/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+        at java.base@15.0.9/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+        at java.base@15.0.9/java.lang.Thread.run(Thread.java:832)
+
+"surefire-forkedjvm-command-thread" 
+   java.lang.Thread.State: RUNNABLE
+        at java.management@15.0.9/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+        at java.management@15.0.9/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:197)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.generateThreadDump(ForkedBooter.java:683)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.access$600(ForkedBooter.java:80)
+        at app//org.apache.maven.surefire.booter.ForkedBooter$4.update(ForkedBooter.java:368)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.callListeners(CommandReader.java:426)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.exitByConfiguration(CommandReader.java:438)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:390)
+        at java.base@15.0.9/java.lang.Thread.run(Thread.java:832)
+
+"surefire-forkedjvm-last-ditch-daemon-shutdown-thread-30s" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@15.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@15.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+        at java.base@15.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+        at java.base@15.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+        at java.base@15.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+        at java.base@15.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+        at java.base@15.0.9/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+        at java.base@15.0.9/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+        at java.base@15.0.9/java.lang.Thread.run(Thread.java:832)
+
+
+
