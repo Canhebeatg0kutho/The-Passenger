@@ -50,5 +50,15 @@ public class Passenger {
         return phone;
     }
 
+    public int getAge(int age){
+        if(age>=16){
+            System.out.println("You are "+age+" Years old");
+        }
+        else{
+            throw new IllegalArgumentException("You are too young");
+        }
+        return age;
+    }
+
 
 }
