@@ -30,6 +30,16 @@ public class Passenger {
       return name;
     }
 
+    public String getId(String Id){
+        if(Id.length()>=10){
+            System.out.println("Your ID is "+Id);
+        }
+        else{
+            throw new IllegalArgumentException("This Id is too short");
+        }
+        return Id;
+    }
+
 
 
 }
