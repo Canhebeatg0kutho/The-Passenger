@@ -15,10 +15,21 @@ public class Passenger {
             case "Ms":
                 System.out.println("Your title is " + title); break;
             default:
-                System.out.println("Invalid title"); break;
+                throw new IllegalArgumentException("This title is not valid");
         }
         return title;
     }
+
+    public String getName(String name){
+      if(name.length()>=3){
+          System.out.println("Your name is "+name);
+      }
+      else{
+          throw new IllegalArgumentException("This name is too short");
+      }
+      return name;
+    }
+
 
 
 }

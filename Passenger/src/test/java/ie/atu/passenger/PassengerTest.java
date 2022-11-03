@@ -10,11 +10,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class PassengerTest {
     Passenger title;
+    Passenger name;
 
 
     @BeforeEach
     void setUp() {
         title = new Passenger();
+        name = new Passenger();
     }
 
     @Test
@@ -22,6 +24,8 @@ class PassengerTest {
         assertEquals("Ms",title.getTitle("Ms"));
     }
 
+    @Test
+    void testName(){assertEquals("John",name.getName("John"));}
 
     @AfterEach
     void tearDown() {
