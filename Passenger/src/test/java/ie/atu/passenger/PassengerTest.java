@@ -13,6 +13,7 @@ class PassengerTest {
     Passenger name;
     Passenger Id;
     Passenger phone;
+    Passenger age;
 
 
     @BeforeEach
@@ -21,6 +22,7 @@ class PassengerTest {
         name = new Passenger();
         Id = new Passenger();
         phone = new Passenger();
+        age = new Passenger();
     }
 
     @Test
@@ -37,6 +39,8 @@ class PassengerTest {
     @Test
     void testPhone(){assertEquals("0899483215",phone.getPhone("0899483215"));}
 
+    @Test
+    void testAge(){assertEquals(16,age.getAge(16));}
     @AfterEach
     void tearDown() {
     }
